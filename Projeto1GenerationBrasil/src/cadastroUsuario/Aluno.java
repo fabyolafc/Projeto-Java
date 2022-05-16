@@ -9,9 +9,10 @@ public class Aluno extends Pessoa {
 	private int mediaGeral_anoAtual;
 	private int mediaMatematica_anoAnterior;
 	private int mediaMatematica_anoAtual;
+	private String senha;
 	
 	public Aluno(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
-			LocalDate dataDeNascimento, String endereco, String celular, String email, int anoEscolar,
+			LocalDate dataDeNascimento, String endereco, String celular, String email,String senha, int anoEscolar,
 			int mediaGeral_anoAnterior, int mediaGeral_anoAtual, int mediaMatematica_anoAnterior,
 			int mediaMatematica_anoAtual) {
 		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, celular, email);
@@ -20,6 +21,15 @@ public class Aluno extends Pessoa {
 		this.mediaGeral_anoAtual = mediaGeral_anoAtual;
 		this.mediaMatematica_anoAnterior = mediaMatematica_anoAnterior;
 		this.mediaMatematica_anoAtual = mediaMatematica_anoAtual;
+		this.senha = senha;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 
 	public int getAnoEscolar() {

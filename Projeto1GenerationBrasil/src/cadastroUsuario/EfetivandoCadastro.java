@@ -14,7 +14,7 @@ public class EfetivandoCadastro {
 		System.out.println("1 - Aluno"
 							+ "\n2 - Professor"
 							+ "\n3 - Investidor");
-		System.out.println("\nDigite a opção desejada: ");
+		System.out.println("\nDigite a opï¿½ï¿½o desejada: ");
 		
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -24,7 +24,7 @@ public class EfetivandoCadastro {
 		switch (opcao) {
 		case 1: {
 			System.out.println("\nVamos iniciar agora o cadastro do aluno.");
-			System.out.println("\nInsira as informações solicitadas no cadastro.");
+			System.out.println("\nInsira as informaï¿½ï¿½es solicitadas no cadastro.");
 			int id, anoEscolar;
 			double mediaGeral_anoAnterior, mediaMatematica_anoAnterior;
 			String nome, sobrenomesDoMeio, ultimoSobrenome, rg, endereco, celular, email;
@@ -35,23 +35,23 @@ public class EfetivandoCadastro {
 			nome = input.next();
 			System.out.println("\nSobrenome(s) do meio: ");
 			sobrenomesDoMeio = input.next();
-			System.out.println("\nÚltimo Sobrenome: ");
+			System.out.println("\nï¿½ltimo Sobrenome: ");
 			ultimoSobrenome = input.next();
 			System.out.println("");
-			LocalDate datadeNascimento = dateInput(stringInput("\nData de Nascimento: "));
+			LocalDate datadeNascimento = dateInput(("\nData de Nascimento: "));
 			System.out.println("\nRG do aluno: ");
 			rg = input.next();
-			System.out.println("\nEndereço: ");
+			System.out.println("\nEndereï¿½o: ");
 			rg = input.next();
 			System.out.println("\nCelular: ");
 			rg = input.next();
 			System.out.println("\nE-mail: ");
 			email = input.next();
-			System.out.println("\nAno Escolar atual (exemplo: digite 6 para 6º ano = 5ª série ...): ");
+			System.out.println("\nAno Escolar atual (exemplo: digite 6 para 6ï¿½ ano = 5ï¿½ sï¿½rie ...): ");
 			anoEscolar = input.nextInt();
-			System.out.println("\nMédia Geral do aluno no ano passado: ");
+			System.out.println("\nMï¿½dia Geral do aluno no ano passado: ");
 			mediaGeral_anoAnterior = input.nextDouble();
-			System.out.println("\nMédia de Matemática no ano passado: ");
+			System.out.println("\nMï¿½dia de Matemï¿½tica no ano passado: ");
 			mediaMatematica_anoAnterior = input.nextDouble();
 			public Aluno(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
 					LocalDate dataDeNascimento, String endereco, String celular, String email, int anoEscolar,
