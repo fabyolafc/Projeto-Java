@@ -3,7 +3,7 @@ package cadastroUsuario;
 public class Investidor extends Pessoa {
 	
 	private String cpf;
-	private double quantiaDoada;
+	private double quantiaDoada = 0;
 	
 	public Investidor(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome,
 			String email, String cpf, double quantiaDoada) {

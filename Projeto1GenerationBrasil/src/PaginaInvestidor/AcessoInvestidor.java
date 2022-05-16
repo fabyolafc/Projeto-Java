@@ -1,5 +1,6 @@
 package PaginaInvestidor;
 
+import java.text.NumberFormat;
 import java.util.Scanner;
 
 import cadastroUsuario.Investidor;
@@ -18,8 +19,11 @@ public class AcessoInvestidor extends Investidor {
 		this.totalDoado = totalDoado;
 		this.doacao = doacao;
 	}
-	
+		
 	public void inicio () {
+		
+		NumberFormat nf = NumberFormat.getCurrencyInstance();
+		nf.setMinimumFractionDigits(2);
 		
 		do {
 			System.out.println("\nSeja Bem vindo " + getNome() + getSobrenomesDoMeio() + getUltimoSobrenome());
@@ -36,18 +40,19 @@ public class AcessoInvestidor extends Investidor {
 				System.out.println("\nNome: " + getNome() + getSobrenomesDoMeio() + getUltimoSobrenome());
 				System.out.println("\nEmail: " + getEmail());
 				System.out.println("\nCPF: " + getCpf());
-				System.out.println("\nValor total doado: " + totalDoado);
+				System.out.println("\nValor total doado: " + nf.format(totalDoado));
 				break;
 			case 2:
-				System.out.println("\nValor total doado: " + totalDoado);
+				System.out.println("\nValor total doado: " + nf.format(totalDoado));
 				break;
 			case 3:
-				System.out.println("\nValor arrecadado pelo projeto: " + getQuantiaDoada());
+				System.out.println("\nValor arrecadado pelo projeto: " + nf.format( getQuantiaDoada() ));
 				break;
 			case 4:
 				System.out.println("Informe o falor que deseja doar: ");
 				doacao = leia.nextDouble();
 				totalDoado += doacao;
+				setQuantiaDoada(getQuantiaDoada()+ doacao);
 				break;
 			case 5:
 				System.out.println("\nObrigado por fazer parte desse projeto!");
