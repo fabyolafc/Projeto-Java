@@ -1,21 +1,21 @@
 package cadastroUsuario;
 
-import java.time.LocalDate;
+public class Professor extends Pessoa {
 
-public class Professor extends Funcionario {
-
-	private String moduloQueLeciona;
 	private int quantidadeTurmas;
 	private String senha;
+	private double salario;
+	private String cpf;
 	
-	public Professor(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
-			LocalDate dataDeNascimento, String endereco, String celular, String email,String senha, double salario, String cpf,
-			String cargoAtual, int tempoDeEmpresa, String moduloQueLeciona, int quantidadeTurmas) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, celular, email, salario, cpf,
-				cargoAtual, tempoDeEmpresa);
-		this.moduloQueLeciona = moduloQueLeciona;
+	public Professor (int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
+			String rg, int dataDeNascimento, String endereco, String celular, String email, 
+			int idade, int quantidadeTurmas, String senha, double salario, String cpf) {
+		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, 
+				celular, email, idade);
 		this.quantidadeTurmas = quantidadeTurmas;
 		this.senha = senha;
+		this.salario = salario;
+		this.cpf = cpf;
 	}
 
 	public String getSenha() {
@@ -26,14 +26,6 @@ public class Professor extends Funcionario {
 		this.senha = senha;
 	}
 
-	public String getModuloQueLeciona() {
-		return moduloQueLeciona;
-	}
-
-	public void setModuloQueLeciona(String moduloQueLeciona) {
-		this.moduloQueLeciona = moduloQueLeciona;
-	}
-
 	public int getQuantidadeTurmas() {
 		return quantidadeTurmas;
 	}
@@ -41,5 +33,22 @@ public class Professor extends Funcionario {
 	public void setQuantidadeTurmas(int quantidadeTurmas) {
 		this.quantidadeTurmas = quantidadeTurmas;
 	}
-		
+
+	public double getSalario() {
+		return salario;
+	}
+
+	public void setSalario(double salario) {
+		this.salario = salario;
+	}
+
+	public String getCpf() {
+		return cpf;
+	}
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
+	}
+	
+	
 }
