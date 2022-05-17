@@ -7,7 +7,7 @@ O objetivo do projeto é criar uma aplicação alinhada com um dos Objetivos de 
 Desta forma, foi desenvolvido um projeto simulando um sistema de uma ONG para ensino de programação para jovens com o intuito de alfabetizar as crianças para o novo mundo digital ensinando programação e melhorar o seu aprendizado na escola.
 
 
-[Generation Brasil - Java Fullstack Jr. - Turma 52]
+[Generation Brasil - Java Fullstack Jr. - Turma 52] <br>
 [Equipe: Dimitri Marinho, Fabyola, Lairton da Silva, Paulo Victor e Thayna Saraiva]
 
 
