@@ -121,7 +121,7 @@ public class EfetivandoCadastro {
 			Scanner input = new Scanner(System.in);
 			int id; 
 			String nome,sobrenomesDoMeio,ultimoSobrenome,
-			 email,cpf;
+			 email,cpf,senha;
 			 double quantiaDoada;
 			 
 			 System.out.println("\nDigite seu Id de investidor: ");
