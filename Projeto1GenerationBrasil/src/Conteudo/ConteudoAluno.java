@@ -11,6 +11,7 @@ public class ConteudoAluno {
 			System.out.println("\t\tEscolha uma opção!");
 			System.out.println("\n1 - Exibir conteúdo...");
 			System.out.println("\n2 - Exibir Quiz...");
+			System.out.println("\n3- sair");
 			op=leia.nextInt();
 			
 			if(op==1) 
@@ -32,6 +33,7 @@ public class ConteudoAluno {
 						+ "\nPara multiplicar usamos o operador de * "
 						+ "\nPara dividir usamos o operador de / ");
 				System.out.println("\nPara exibir uma mensagem na tela usamos o comando 'System.out.println'.");
+				
 			}else if (op==2)
 			{
 				System.out.println("\n\n\tAgora é hora de colocar tudo que aprendeu em prática! Responda o QUIZ.");
@@ -138,7 +140,8 @@ public class ConteudoAluno {
 				} while(op!=3);
 				
 				System.out.println("\n\t\tObrigado(a) por participar!");
-			}else 
+			}
+			else 
 			{
 				System.out.println("Opção inválida!!!");
 			}			

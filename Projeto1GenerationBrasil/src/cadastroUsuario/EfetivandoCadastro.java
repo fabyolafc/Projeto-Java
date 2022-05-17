@@ -81,7 +81,7 @@ public class EfetivandoCadastro {
 			int id,quantidadeTurmas,anoDeNascimento,idade;
 			String nome,sobrenomesDoMeio,ultimoSobrenome, rg, endereco,celular,email,senha,cpf;
 			double salario;
-			
+			System.out.println();
 			System.out.println("\nDigite seu Id de professor: ");
 			id = input.nextInt();
 			System.out.println("\nDigite seu Primeiro Nome: ");
