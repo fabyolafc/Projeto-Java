@@ -8,17 +8,10 @@ public class Professor extends Pessoa {
 	private String cpf;
 	
 	public Professor (int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
-<<<<<<< HEAD
 			String rg, int anoDeNascimento, String endereco, String celular, String email, 
 			int idade, int quantidadeTurmas, String senha, double salario, String cpf) {
 		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, anoDeNascimento, endereco, 
 				celular, email);
-=======
-			String rg, int dataDeNascimento, String endereco, String celular, String email, 
-			int idade, int quantidadeTurmas, String senha, double salario, String cpf) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, 
-				celular, email, idade);
->>>>>>> c7ed4db3e4579bcddaa76eb90ee3c62e21cf0d56
 		this.quantidadeTurmas = quantidadeTurmas;
 		this.senha = senha;
 		this.salario = salario;
@@ -58,8 +51,4 @@ public class Professor extends Pessoa {
 	}
 	
 	
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> c7ed4db3e4579bcddaa76eb90ee3c62e21cf0d56
