@@ -34,7 +34,7 @@ public class EfetivandoCadastro {
 			int id, anoEscolar,idade;
 			double mediaGeral_anoAnterior, mediaMatematica_anoAnterior,mediaMatematica_anoAtual,mediaGeral_anoAtual;
 			String nome, sobrenomesDoMeio, ultimoSobrenome, rg, endereco, celular, email;
-			int dataDeNascimento;
+			int anoDeNascimento;
 			String senha;
 			System.out.println("\nDigite seu Id de aluno: ");
 			id = input.nextInt();
@@ -44,8 +44,8 @@ public class EfetivandoCadastro {
 			sobrenomesDoMeio = input.next();
 			System.out.println("\nDigite seu �ltimo Sobrenome: ");
 			ultimoSobrenome = input.next();
-			System.out.println("");
-			dataDeNascimento = input.nextInt();
+			System.out.println("\nDigite seu ano de nascimento:");
+			anoDeNascimento = input.nextInt();
 			System.out.println("\nDigite seu RG (Registro Geral): ");
 			rg = input.next();
 			System.out.println("\nDigite seu Endere�o: ");
@@ -70,7 +70,7 @@ public class EfetivandoCadastro {
 			idade = input.nextInt();
 			
 			Aluno aluno = new Aluno(id,nome,sobrenomesDoMeio, ultimoSobrenome, rg,
-					dataDeNascimento,endereco, celular,email, senha, anoEscolar,
+					anoDeNascimento,endereco, celular,email, senha, anoEscolar,
 					mediaGeral_anoAnterior, mediaGeral_anoAtual, mediaMatematica_anoAnterior,
 					 mediaMatematica_anoAtual,idade);
 			alunos.add(aluno);

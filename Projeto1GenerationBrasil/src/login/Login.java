@@ -78,24 +78,28 @@ public class Login {
 			return null;
 		}
 		public void logarInvestidor (Investidor investidor) {
-			int id; 
-			String nome,sobrenomesDoMeio,ultimoSobrenome,
-			 email,cpf,senha;
-			 double quantiaDoada,totalDoado;
-			 
-			 id = investidor.getId();
-			 nome = investidor.getNome();
-			 sobrenomesDoMeio = investidor.getSobrenomesDoMeio();
-			 ultimoSobrenome = investidor.getUltimoSobrenome();
-			 email = investidor.getEmail();
-			 cpf = investidor.getCpf();
-			 senha = investidor.getSenha();
-			 totalDoado = investidor.getTotalDoado();
-			 quantiaDoada = investidor.getQuantiaDoada();
-			 
-			 AcessoInvestidor pagina = new AcessoInvestidor(id,nome, sobrenomesDoMeio,  ultimoSobrenome,
-						email,  cpf, quantiaDoada, totalDoado, senha);
-			 
-			 pagina.inicio();
+			if(investidor != null) {
+				int id; 
+				String nome,sobrenomesDoMeio,ultimoSobrenome,
+				 email,cpf,senha;
+				 double quantiaDoada,totalDoado;
+				 
+				 id = investidor.getId();
+				 nome = investidor.getNome();
+				 sobrenomesDoMeio = investidor.getSobrenomesDoMeio();
+				 ultimoSobrenome = investidor.getUltimoSobrenome();
+				 email = investidor.getEmail();
+				 cpf = investidor.getCpf();
+				 senha = investidor.getSenha();
+				 totalDoado = investidor.getTotalDoado();
+				 quantiaDoada = investidor.getQuantiaDoada();
+				 
+				 AcessoInvestidor pagina = new AcessoInvestidor(id,nome, sobrenomesDoMeio,  ultimoSobrenome,
+							email,  cpf, quantiaDoada, totalDoado, senha);
+				 
+				 pagina.inicio();
+			}else {
+				System.out.println("Email ou senha inválido");
+			}
 		}
 }
