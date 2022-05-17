@@ -46,7 +46,7 @@ public class EfetivandoCadastro {
 			ultimoSobrenome = input.next();
 			System.out.println("");
 			dataDeNascimento = input.nextInt();
-			System.out.println("\nDigite RG do aluno: ");
+			System.out.println("\nDigite seu RG (Registro Geral): ");
 			rg = input.next();
 			System.out.println("\nDigite seu Endereço: ");
 			endereco = input.next();
@@ -92,7 +92,7 @@ public class EfetivandoCadastro {
 			ultimoSobrenome = input.next();
 			System.out.println("");
 			dataDeNascimento = input.nextInt();
-			System.out.println("\nDigite RG do aluno: ");
+			System.out.println("\nDigite seu RG (Registro Geral): ");
 			rg = input.next();
 			System.out.println("\nDigite seu Cpf:");
 			cpf = input.next();
@@ -124,7 +124,7 @@ public class EfetivandoCadastro {
 			 email,cpf;
 			 double quantiaDoada;
 			 
-			 System.out.println("\nDigite o Id do professor: ");
+			 System.out.println("\nDigite seu Id de investidor: ");
 				id = input.nextInt();
 				System.out.println("\nDigite seu Primeiro Nome: ");
 				nome = input.next();
