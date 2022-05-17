@@ -4,7 +4,7 @@ import java.util.List;
 
 import cadastroUsuario.Aluno;
 import cadastroUsuario.Professor;
-import Conteudo.ConteudoAluno;
+import conteudo.ConteudoAluno;
 
 public class Login {
 	public boolean AutenticacaoAluno(String email, String senha,List<Aluno> turma ) {
@@ -23,7 +23,7 @@ public class Login {
 			conteudo.exibiMenu();
 		}
 		else {
-			System.out.println("email ou senha inv√°lidos");
+			System.out.println("email ou senha inv·lidos");
 		}
 	}
 	

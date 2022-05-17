@@ -1,4 +1,4 @@
-package PaginaInvestidor;
+package paginaInvestidor;
 
 import java.text.NumberFormat;
 import java.util.Scanner;
@@ -27,11 +27,11 @@ public class AcessoInvestidor extends Investidor {
 		
 		do {
 			System.out.println("\nSeja Bem vindo " + getNome() + getSobrenomesDoMeio() + getUltimoSobrenome());
-			System.out.println("\nEscolha uma opção:");
-			System.out.println("\n1 - Ver suas informações.");
-			System.out.println("\n2 - Ver a quantidade total que você doou.");
+			System.out.println("\nEscolha uma opÃ§Ã£o:");
+			System.out.println("\n1 - Ver suas informaÃ§Ãµes.");
+			System.out.println("\n2 - Ver a quantidade total que vocï¿½ doou.");
 			System.out.println("\n3 - Ver o total arrecadado para o projeto.");
-			System.out.println("\n4 - Fazer doações.");
+			System.out.println("\n4 - Fazer doaÃ§Ãµes.");
 			System.out.println("\n5 - Sair");
 			op = leia.nextInt();
 			switch (op){
@@ -58,7 +58,7 @@ public class AcessoInvestidor extends Investidor {
 				System.out.println("\nObrigado por fazer parte desse projeto!");
 				break;
 			default:
-				System.out.println("\nOpção inválida, escolha uma das 5 mencionadas.");
+				System.out.println("\nOpÃ§Ã£o invÃ¡lida, escolha uma das 5 mencionadas.");
 			}
 		}while (op != 5);
 		
