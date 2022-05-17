@@ -1,11 +1,6 @@
 package cadastroUsuario;
 
-import java.time.LocalDate;
-
 public class Pessoa {
-	
-	LocalDate data = LocalDate.now();
-	private int anoAtual = data.getYear();
 	
 	private int id;
 	private String nome;
@@ -29,7 +24,7 @@ public class Pessoa {
 		this.endereco = endereco;
 		this.celular = celular;
 		this.email = email;
-		this.idade = anoAtual - anoDeNascimento;
+		this.idade = idade;
 	}
 	
 	public Pessoa(int id, String nome, String sobrenomesDoMeio, 
