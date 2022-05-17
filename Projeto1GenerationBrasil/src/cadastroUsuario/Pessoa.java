@@ -5,19 +5,23 @@ import java.time.Period;
 
 public class Pessoa {
 	
+	LocalDate data = LocalDate.now();
+	private int anoAtual = data.getYear();
+	
 	private int id;
 	private String nome;
 	private String sobrenomesDoMeio;
 	private String ultimoSobrenome;
 	private String rg;
-	private LocalDate dataDeNascimento;
+	private int dataDeNascimento;
 	private String endereco;
 	private String celular;	
 	private String email;
-	private int idade;
+	private int idade = anoAtual - dataDeNascimento;
 	
-	public Pessoa(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
-			LocalDate dataDeNascimento, String endereco, String celular, String email) {
+	public Pessoa(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
+			String rg, int dataDeNascimento, String endereco, String celular, String email, 
+			int idade) {
 		this.id = id;
 		this.nome = nome;
 		this.sobrenomesDoMeio = sobrenomesDoMeio;
@@ -27,7 +31,7 @@ public class Pessoa {
 		this.endereco = endereco;
 		this.celular = celular;
 		this.email = email;
-		this.idade = calculaIdade(dataDeNascimento);
+		this.idade = idade;
 	}
 	
 	public Pessoa(int id, String nome, String sobrenomesDoMeio, 
@@ -37,20 +41,6 @@ public class Pessoa {
 		this.sobrenomesDoMeio = sobrenomesDoMeio;
 		this.ultimoSobrenome = ultimoSobrenome;
 		this.email = email;	
-	}
-
-	// https://www.javatpoint.com/java-calculate-age
-	public static int calculaIdade(LocalDate dataDeNascimento){
-			
-		LocalDate dataAtual = LocalDate.now();
-		
-		if ((dataDeNascimento != null) && (dataAtual != null)) {  
-			return Period.between(dataDeNascimento, dataAtual).getYears();  
-		}  
-		else {  
-			return 0;  
-		}  	   
-				
 	}
 
 	public int getId() {
@@ -93,11 +83,11 @@ public class Pessoa {
 		this.rg = rg;
 	}
 
-	public LocalDate getDataDeNascimento() {
+	public int getDataDeNascimento() {
 		return dataDeNascimento;
 	}
 
-	public void setDataDeNascimento(LocalDate dataDeNascimento) {
+	public void setDataDeNascimento(int dataDeNascimento) {
 		this.dataDeNascimento = dataDeNascimento;
 	}
 

@@ -1,7 +1,5 @@
 package cadastroUsuario;
 
-import java.time.LocalDate;
-
 public class Aluno extends Pessoa {
 		
 	private int anoEscolar;
@@ -11,11 +9,13 @@ public class Aluno extends Pessoa {
 	private double mediaMatematica_anoAtual;
 	private String senha;
 	
-	public Aluno(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
-			LocalDate dataDeNascimento, String endereco, String celular, String email,String senha, int anoEscolar,
-			double mediaGeral_anoAnterior, double mediaGeral_anoAtual, double mediaMatematica_anoAnterior,
-			double mediaMatematica_anoAtual) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, celular, email);
+	public Aluno(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
+			String rg, int dataDeNascimento, String endereco, String celular, 
+			String email,String senha, int anoEscolar, double mediaGeral_anoAnterior, 
+			double mediaGeral_anoAtual, double mediaMatematica_anoAnterior,
+			double mediaMatematica_anoAtual, int idade) {
+		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco,
+				celular, email, idade);
 		this.anoEscolar = anoEscolar;
 		this.mediaGeral_anoAnterior = mediaGeral_anoAnterior;
 		this.mediaGeral_anoAtual = mediaGeral_anoAtual;
