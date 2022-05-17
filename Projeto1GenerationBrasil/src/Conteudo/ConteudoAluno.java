@@ -21,7 +21,7 @@ public class ConteudoAluno {
 						+ "De laptops a datacenters, consoles de games a supercomputadores científicos, telefones celulares e Internet, o Java está em todos os lugares!");
 				System.out.println("\nO que são variáveis?");
 				System.out.println("As variáveis são posições na memória do computador que podem armazenar dados."
-						+ "\nAlguns tipos de variáveis: \nString = Permite voc� armazenar qualquer tipo de caracteres seja numero ou texto. "
+						+ "\nAlguns tipos de variáveis: \nString = Permite você armazenar qualquer tipo de caracteres seja número ou texto. "
 						+ "\nint = Permite você armazenar só números do tipo inteiro. "
 						+ "\nfloat = Armazena números com ponto flutuante (reais) com precisão simples. "
 						+ "\ndouble = Armazena números com ponto flutuante, com precisão dupla, ou seja possui o dobro da capacidade de uma variável do tipo float.");
@@ -34,7 +34,7 @@ public class ConteudoAluno {
 				System.out.println("\nPara exibir uma mensagem na tela usamos o comando 'System.out.println'.");
 			}else if (op==2)
 			{
-				System.out.println("\n\n\tAgora � hora de colocar tudo que aprendeu em pr�tica! Responda o QUIZ.");
+				System.out.println("\n\n\tAgora é hora de colocar tudo que aprendeu em prática! Responda o QUIZ.");
 				
 				do
 				{
@@ -58,7 +58,7 @@ public class ConteudoAluno {
 				
 				do
 				{
-					System.out.println("\n2 - Qual tipo de dados é usado para criar uma vari�vel que deve armazenar texto?");
+					System.out.println("\n2 - Qual tipo de dados é usado para criar uma variável que deve armazenar texto?");
 					System.out.println("\n[1] string");
 					System.out.println("\n[2] myString");
 					System.out.println("\n[3] String");
@@ -78,7 +78,7 @@ public class ConteudoAluno {
 				
 				do
 				{
-					System.out.println("\n3 - Qual tipo de dados é usado para criar uma vari�vel que deve armazenar número do tipo inteiro?");
+					System.out.println("\n3 - Qual tipo de dados é usado para criar uma variável que deve armazenar número do tipo inteiro?");
 					System.out.println("\n[1] double");
 					System.out.println("\n[2] float");
 					System.out.println("\n[3] String");
