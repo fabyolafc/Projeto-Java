@@ -1,12 +1,14 @@
-## Primeiro projeto em Java do Bootcamp da Generation
-
-Equipe: Dimitri Marinho, Fabyola, Lairton da Silva, Paulo Victor e Thayna Saraiva
-
 ### Projeto: ONG para ensino de programação para jovens
 
-Foram desenvolvidos 6 pacotes no projeto: Exibição, Login, Conteúdo, PáginaInvestidor e CadastroUsuário
+Este programa foi desenvolvido como o primeiro projeto de Java para o Bootcamp da ONG Generation Brasil.
 
-No pacote de exibição foram criadas duas classes para incrementar no visual do programa através do console.
-As Classes Cabecalhos e Ilustracoes que apresentam um visual no console.
+O objetivo do projeto é criar uma aplicação alinhada com um dos Objetivos de Desenvolvimento Sustentável (ODS) da ONU. A equipe escolheu a ODS 4 -  Educação de qualidade: Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de aprendizagem ao longo da vida para todos.
 
-No pacote de Login a classe verifica o e-mail e a senha para validar o login.
+Desta forma, foi desenvolvido um projeto simulando um sistema de uma ONG para ensino de programação para jovens com o intuito de alfabetizar as crianças para o novo mundo digital ensinando programação e melhorando o seu aprendizado na escola.
+
+
+[Generation Brasil - Java Fullstack Jr. - Turma 52] <br>
+[Equipe: Dimitri Marinho, Fabyola, Lairton da Silva, Paulo Victor e Thayna Saraiva]
+
+
+Digite START para iniciar o programa:
