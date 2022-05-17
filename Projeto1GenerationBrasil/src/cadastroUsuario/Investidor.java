@@ -5,6 +5,7 @@ public class Investidor extends Pessoa {
 	private String cpf;
 	private double quantiaDoada = 0;
 	private String senha;
+	private double totalDoado = 0;
 	
 	public Investidor(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome,
 			String email, String cpf, double quantiaDoada,String senha) {
@@ -12,6 +13,14 @@ public class Investidor extends Pessoa {
 		this.cpf = cpf;
 		this.quantiaDoada = quantiaDoada;
 		this.setSenha(senha);
+	}
+
+	public double getTotalDoado() {
+		return totalDoado;
+	}
+
+	public void setTotalDoado(double totalDoado) {
+		this.totalDoado = totalDoado;
 	}
 
 	public String getCpf() {

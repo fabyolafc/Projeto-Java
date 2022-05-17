@@ -14,10 +14,9 @@ public class AcessoInvestidor extends Investidor {
 	private double totalDoado = 0;
 	
 	public AcessoInvestidor(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome,
-			String email, String cpf, double quantiaDoada, double totalDoado, double doacao) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, email, cpf, quantiaDoada);
+			String email, String cpf, double quantiaDoada, double totalDoado, String senha) {
+		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, email, cpf, quantiaDoada,senha);
 		this.totalDoado = totalDoado;
-		this.doacao = doacao;
 	}
 		
 	public void inicio () {

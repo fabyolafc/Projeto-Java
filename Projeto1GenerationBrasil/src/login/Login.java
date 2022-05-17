@@ -7,6 +7,7 @@ import cadastroUsuario.Professor;
 import cadastroUsuario.Investidor;
 import Conteudo.ConteudoAluno;
 import PaginaProfessor.AcessoProfessor;
+import PaginaInvestidor.AcessoInvestidor;
 
 public class Login {
 	public boolean AutenticacaoAluno(String email, String senha,List<Aluno> turma ) {
@@ -71,9 +72,30 @@ public class Login {
 		public Investidor autenticacaoInvestidor(String email, String senha,List<Investidor> investidores) {
 			for ( Investidor investidor:investidores) {
 				if(investidor.getEmail().equals(email) && investidor.getSenha().equals(senha)) {
-					 professor;
+					 return investidor;
 				}
 			}
 			return null;
+		}
+		public void logarInvestidor (Investidor investidor) {
+			int id; 
+			String nome,sobrenomesDoMeio,ultimoSobrenome,
+			 email,cpf,senha;
+			 double quantiaDoada,totalDoado;
+			 
+			 id = investidor.getId();
+			 nome = investidor.getNome();
+			 sobrenomesDoMeio = investidor.getSobrenomesDoMeio();
+			 ultimoSobrenome = investidor.getUltimoSobrenome();
+			 email = investidor.getEmail();
+			 cpf = investidor.getCpf();
+			 senha = investidor.getSenha();
+			 totalDoado = investidor.getTotalDoado();
+			 quantiaDoada = investidor.getQuantiaDoada();
+			 
+			 AcessoInvestidor pagina = new AcessoInvestidor(id,nome, sobrenomesDoMeio,  ultimoSobrenome,
+						email,  cpf, quantiaDoada, totalDoado, senha);
+			 
+			 pagina.inicio();
 		}
 }
