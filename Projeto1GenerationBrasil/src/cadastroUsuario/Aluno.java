@@ -14,8 +14,10 @@ public class Aluno extends Pessoa {
 			String email,String senha, int anoEscolar, double mediaGeral_anoAnterior, 
 			double mediaGeral_anoAtual, double mediaMatematica_anoAnterior,
 			double mediaMatematica_anoAtual, int idade) {
+		
 		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco,
 				celular, email, idade);
+		
 		this.anoEscolar = anoEscolar;
 		this.mediaGeral_anoAnterior = mediaGeral_anoAnterior;
 		this.mediaGeral_anoAtual = mediaGeral_anoAtual;
