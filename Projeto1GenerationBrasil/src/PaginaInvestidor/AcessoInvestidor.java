@@ -29,7 +29,7 @@ public class AcessoInvestidor extends Investidor {
 			System.out.println("\nSeja Bem vindo " + getNome() + getSobrenomesDoMeio() + getUltimoSobrenome());
 			System.out.println("\nEscolha uma opção:");
 			System.out.println("\n1 - Ver suas informações.");
-			System.out.println("\n2 - Ver a quantidade total que voc� doou.");
+			System.out.println("\n2 - Ver a quantidade total que você doou.");
 			System.out.println("\n3 - Ver o total arrecadado para o projeto.");
 			System.out.println("\n4 - Fazer doações.");
 			System.out.println("\n5 - Sair");
