@@ -6,12 +6,12 @@ import java.util.Scanner;
 public class EfetivandoCadastro {
 	
 	public void Cadastro(List<Aluno> listAlunos, List<Professor> listProfessor, List<Investidor> Investidor) {
-		System.out.println("Vamos iniciar o cadastro... "
-				+ "\nQual a categoria que o cadastro atual se enquadra ?\n");
+		System.out.println("Vamos iniciar o seu cadastro... "
+				+ "\nDigite a categoria que o seu cadastro atual se enquadra?\n");
 		System.out.println("1 - Aluno"
 							+ "\n2 - Professor"
 							+ "\n3 - Investidor");
-		System.out.println("\nDigite a opÃ§Ã£o desejada: ");
+		System.out.println("\nDigite a opção desejada: ");
 		
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -30,43 +30,43 @@ public class EfetivandoCadastro {
 	public void cadastroAluno(List<Aluno> alunos){
 			Scanner input = new Scanner(System.in);
 			System.out.println("\nVamos iniciar agora o cadastro do aluno.");
-			System.out.println("\nInsira as informaï¿½ï¿½es solicitadas no cadastro.");
+			System.out.println("\nInsira as informações solicitadas no cadastro.");
 			int id, anoEscolar,idade;
 			double mediaGeral_anoAnterior, mediaMatematica_anoAnterior,mediaMatematica_anoAtual,mediaGeral_anoAtual;
 			String nome, sobrenomesDoMeio, ultimoSobrenome, rg, endereco, celular, email;
 			int dataDeNascimento;
 			String senha;
-			System.out.println("\nId do aluno: ");
+			System.out.println("\nDigite seu Id de aluno: ");
 			id = input.nextInt();
-			System.out.println("\nPrimeiro Nome: ");
+			System.out.println("\nDigite seu Primeiro Nome: ");
 			nome = input.next();
-			System.out.println("\nSobrenome(s) do meio: ");
+			System.out.println("\nDigite seu Sobrenome(s) do meio: ");
 			sobrenomesDoMeio = input.next();
-			System.out.println("\nÃšltimo Sobrenome: ");
+			System.out.println("\nDigite seu Último Sobrenome: ");
 			ultimoSobrenome = input.next();
 			System.out.println("");
 			dataDeNascimento = input.nextInt();
-			System.out.println("\nRG do aluno: ");
+			System.out.println("\nDigite RG do aluno: ");
 			rg = input.next();
-			System.out.println("\nEndereï¿½o: ");
+			System.out.println("\nDigite seu Endereço: ");
 			endereco = input.next();
-			System.out.println("\nCelular: ");
+			System.out.println("\nDigite seu número de celular: ");
 			celular = input.next();
-			System.out.println("\nE-mail: ");
+			System.out.println("\nDigite seu E-mail: ");
 			email = input.next();
-			System.out.println("\nsenha:");
+			System.out.println("\nDigite sua senha:");
 			senha = input.next();
-			System.out.println("\nAno Escolar atual (exemplo: digite 6 para 6ï¿½ ano = 5ï¿½ sï¿½rie ...): ");
+			System.out.println("\nDigite seu Ano Escolar atual (exemplo: digite 6 para 6º ano = 5 para 5ª série ...): ");
 			anoEscolar = input.nextInt();
-			System.out.println("\nMÃ©dia Geral do aluno no ano passado: ");
+			System.out.println("\nMédia Geral do aluno no ano passado: ");
 			mediaGeral_anoAnterior = input.nextDouble();
-			System.out.println("\nMÃ©dia de MatemÃ¡tica no ano passado: ");
+			System.out.println("\nMédia de Matemática no ano passado: ");
 			mediaMatematica_anoAnterior = input.nextDouble();
-			System.out.println("\nMï¿½dia Geral do aluno no ano passado: ");
+			System.out.println("\nMédia Geral do aluno no ano passado: ");
 			mediaGeral_anoAtual = input.nextDouble();
-			System.out.println("\nMï¿½dia de Matemï¿½tica no ano passado: ");
+			System.out.println("\nMédia de Matemática no ano passado: ");
 			mediaMatematica_anoAtual = input.nextDouble();
-			System.out.println("\nidade: ");
+			System.out.println("\nDigite sua idade: ");
 			idade = input.nextInt();
 			
 			Aluno aluno = new Aluno(id,nome,sobrenomesDoMeio, ultimoSobrenome, rg,
@@ -82,31 +82,31 @@ public class EfetivandoCadastro {
 			String nome,sobrenomesDoMeio,ultimoSobrenome, rg, endereco,celular,email,senha,cpf;
 			double salario;
 			
-			System.out.println("\nId do professor: ");
+			System.out.println("\nDigite seu Id de professor: ");
 			id = input.nextInt();
-			System.out.println("\nPrimeiro Nome: ");
+			System.out.println("\nDigite seu Primeiro Nome: ");
 			nome = input.next();
-			System.out.println("\nSobrenome(s) do meio: ");
+			System.out.println("\nDigite seu Sobrenome(s) do meio: ");
 			sobrenomesDoMeio = input.next();
-			System.out.println("\nï¿½ltimo Sobrenome: ");
+			System.out.println("\nDigite seu Último Sobrenome: ");
 			ultimoSobrenome = input.next();
 			System.out.println("");
 			dataDeNascimento = input.nextInt();
-			System.out.println("\nRG do aluno: ");
+			System.out.println("\nDigite RG do aluno: ");
 			rg = input.next();
-			System.out.println("\nCpf:");
+			System.out.println("\nDigite seu Cpf:");
 			cpf = input.next();
-			System.out.println("\nEndereï¿½o: ");
+			System.out.println("\nDigite seu Endereço: ");
 			endereco = input.next();
-			System.out.println("\nCelular: ");
+			System.out.println("\nDigite seu número de celular: ");
 			celular = input.next();
-			System.out.println("\nE-mail: ");
+			System.out.println("\nDigite seu E-mail: ");
 			email = input.next();
-			System.out.println("\nsenha:");
+			System.out.println("\nDigite sua senha:");
 			senha = input.next();
-			System.out.println("\nSalario:");
+			System.out.println("\nDigite seu salário:");
 			salario = input.nextDouble();
-			System.out.println("\nidade:");
+			System.out.println("\nDigite sua idade:");
 			idade = input.nextInt();
 			System.out.println("Quantidade de turmas:");
 			quantidadeTurmas = input.nextInt();
@@ -124,20 +124,20 @@ public class EfetivandoCadastro {
 			 email,cpf;
 			 double quantiaDoada;
 			 
-			 System.out.println("\nId do professor: ");
+			 System.out.println("\nDigite o Id do professor: ");
 				id = input.nextInt();
-				System.out.println("\nPrimeiro Nome: ");
+				System.out.println("\nDigite seu Primeiro Nome: ");
 				nome = input.next();
-				System.out.println("\nSobrenome(s) do meio: ");
+				System.out.println("\nDigite seu Sobrenome(s) do meio: ");
 				sobrenomesDoMeio = input.next();
-				System.out.println("\nï¿½ltimo Sobrenome: ");
+				System.out.println("\nDigite seu Último Sobrenome: ");
 				ultimoSobrenome = input.next();
 				System.out.println("");
-				System.out.println("\nCpf:");
+				System.out.println("\nDigite seu Cpf:");
 				cpf = input.next();
-				System.out.println("\nE-mail: ");
+				System.out.println("\nDigite seu E-mail: ");
 				email = input.next();
-				System.out.println("Quanto vocÃª deseja doar: ");
+				System.out.println("Quanto você deseja doar: ");
 				quantiaDoada = input.nextDouble();
 				
 				Investidor investidor = new Investidor(id,nome, sobrenomesDoMeio, ultimoSobrenome,
