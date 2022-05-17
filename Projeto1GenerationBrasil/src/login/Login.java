@@ -39,7 +39,7 @@ public class Login {
 		return null;
 	}
 	
-	public void logarProfessor(Professor professor) {
+	public void logarProfessor(Professor professor,List<Aluno> turma) {
 		if(professor!=null) {
 	
 			int id,quantidadeTurmas,anoDeNascimento,idade;
@@ -63,7 +63,7 @@ public class Login {
 			AcessoProfessor pagina = new AcessoProfessor(id,nome, sobrenomesDoMeio, ultimoSobrenome, rg,
 					anoDeNascimento, endereco,  celular, email, idade,  quantidadeTurmas,
 					 senha, salario, cpf);
-			pagina.inicio();
+			pagina.inicio(turma);
 		}
 		else {
 			System.out.println("email ou senha inv�lidos");
