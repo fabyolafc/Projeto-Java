@@ -23,7 +23,7 @@ public class Login {
 			conteudo.exibiMenu();
 		}
 		else {
-			System.out.println("email ou senha inválidos");
+			System.out.println("email ou senha inv�lidos");
 		}
 	}
 	

@@ -8,10 +8,10 @@ public class Professor extends Pessoa {
 	private String cpf;
 	
 	public Professor (int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
-			String rg, int dataDeNascimento, String endereco, String celular, String email, 
+			String rg, int anoDeNascimento, String endereco, String celular, String email, 
 			int idade, int quantidadeTurmas, String senha, double salario, String cpf) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, 
-				celular, email, idade);
+		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, anoDeNascimento, endereco, 
+				celular, email,idade);
 		this.quantidadeTurmas = quantidadeTurmas;
 		this.senha = senha;
 		this.salario = salario;

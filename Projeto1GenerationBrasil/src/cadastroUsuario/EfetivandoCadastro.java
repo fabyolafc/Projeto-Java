@@ -1,10 +1,7 @@
 package cadastroUsuario;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Scanner;
-import cadastroUsuario.Aluno;
 
 public class EfetivandoCadastro {
 	
@@ -14,7 +11,7 @@ public class EfetivandoCadastro {
 		System.out.println("1 - Aluno"
 							+ "\n2 - Professor"
 							+ "\n3 - Investidor");
-		System.out.println("\nDigite a op��o desejada: ");
+		System.out.println("\nDigite a opção desejada: ");
 		
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
@@ -34,23 +31,21 @@ public class EfetivandoCadastro {
 			Scanner input = new Scanner(System.in);
 			System.out.println("\nVamos iniciar agora o cadastro do aluno.");
 			System.out.println("\nInsira as informa��es solicitadas no cadastro.");
-			
 			int id, anoEscolar,idade;
 			double mediaGeral_anoAnterior, mediaMatematica_anoAnterior,mediaMatematica_anoAtual,mediaGeral_anoAtual;
 			String nome, sobrenomesDoMeio, ultimoSobrenome, rg, endereco, celular, email;
-			LocalDate dataDeNascimento;
+			int dataDeNascimento;
 			String senha;
-			
 			System.out.println("\nId do aluno: ");
 			id = input.nextInt();
 			System.out.println("\nPrimeiro Nome: ");
 			nome = input.next();
 			System.out.println("\nSobrenome(s) do meio: ");
 			sobrenomesDoMeio = input.next();
-			System.out.println("\n�ltimo Sobrenome: ");
+			System.out.println("\nÚltimo Sobrenome: ");
 			ultimoSobrenome = input.next();
 			System.out.println("");
-			int datadeNascimento = input.nextInt();
+			dataDeNascimento = input.nextInt();
 			System.out.println("\nRG do aluno: ");
 			rg = input.next();
 			System.out.println("\nEndere�o: ");
@@ -63,9 +58,9 @@ public class EfetivandoCadastro {
 			senha = input.next();
 			System.out.println("\nAno Escolar atual (exemplo: digite 6 para 6� ano = 5� s�rie ...): ");
 			anoEscolar = input.nextInt();
-			System.out.println("\nM�dia Geral do aluno no ano passado: ");
+			System.out.println("\nMédia Geral do aluno no ano passado: ");
 			mediaGeral_anoAnterior = input.nextDouble();
-			System.out.println("\nM�dia de Matem�tica no ano passado: ");
+			System.out.println("\nMédia de Matemática no ano passado: ");
 			mediaMatematica_anoAnterior = input.nextDouble();
 			System.out.println("\nM�dia Geral do aluno no ano passado: ");
 			mediaGeral_anoAtual = input.nextDouble();
@@ -75,7 +70,7 @@ public class EfetivandoCadastro {
 			idade = input.nextInt();
 			
 			Aluno aluno = new Aluno(id,nome,sobrenomesDoMeio, ultimoSobrenome, rg,
-					datadeNascimento,endereco, celular,email, senha, anoEscolar,
+					dataDeNascimento,endereco, celular,email, senha, anoEscolar,
 					mediaGeral_anoAnterior, mediaGeral_anoAtual, mediaMatematica_anoAnterior,
 					 mediaMatematica_anoAtual,idade);
 			alunos.add(aluno);
@@ -83,8 +78,8 @@ public class EfetivandoCadastro {
 	
 		public void cadastroProfessor(List<Professor> listProfessores) {
 			Scanner input = new Scanner(System.in);
-			int id, tempoDeEmpresa,quantidadeTurmas,dataDeNascimento,idade;
-			String nome,sobrenomesDoMeio,ultimoSobrenome, rg, endereco,celular,email,senha,cpf,cargoAtual;
+			int id,quantidadeTurmas,dataDeNascimento,idade;
+			String nome,sobrenomesDoMeio,ultimoSobrenome, rg, endereco,celular,email,senha,cpf;
 			double salario;
 			
 			System.out.println("\nId do professor: ");
@@ -111,8 +106,6 @@ public class EfetivandoCadastro {
 			senha = input.next();
 			System.out.println("\nSalario:");
 			salario = input.nextDouble();
-			System.out.println("\ntempo de empresa");
-			tempoDeEmpresa = input.nextInt();
 			System.out.println("\nidade:");
 			idade = input.nextInt();
 			System.out.println("Quantidade de turmas:");

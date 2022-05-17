@@ -1,7 +1,6 @@
 package cadastroUsuario;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class Pessoa {
 	
@@ -13,25 +12,24 @@ public class Pessoa {
 	private String sobrenomesDoMeio;
 	private String ultimoSobrenome;
 	private String rg;
-	private int dataDeNascimento;
+	private int anoDeNascimento;
 	private String endereco;
 	private String celular;	
 	private String email;
-	private int idade = anoAtual - dataDeNascimento;
+	private int idade;
 	
 	public Pessoa(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, 
-			String rg, int dataDeNascimento, String endereco, String celular, String email, 
-			int idade) {
+			String rg, int anoDeNascimento, String endereco, String celular, String email,int idade) {
 		this.id = id;
 		this.nome = nome;
 		this.sobrenomesDoMeio = sobrenomesDoMeio;
 		this.ultimoSobrenome = ultimoSobrenome;
 		this.rg = rg;
-		this.dataDeNascimento = dataDeNascimento;
+		this.anoDeNascimento = anoDeNascimento;
 		this.endereco = endereco;
 		this.celular = celular;
 		this.email = email;
-		this.idade = idade;
+		this.idade = anoAtual - anoDeNascimento;
 	}
 	
 	public Pessoa(int id, String nome, String sobrenomesDoMeio, 
@@ -83,12 +81,12 @@ public class Pessoa {
 		this.rg = rg;
 	}
 
-	public int getDataDeNascimento() {
-		return dataDeNascimento;
+	public int getAnoDeNascimento() {
+		return anoDeNascimento;
 	}
 
-	public void setDataDeNascimento(int dataDeNascimento) {
-		this.dataDeNascimento = dataDeNascimento;
+	public void setAnoDeNascimento(int anoDeNascimento) {
+		this.anoDeNascimento = anoDeNascimento;
 	}
 
 	public String getEndereco() {

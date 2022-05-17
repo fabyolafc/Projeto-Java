@@ -1,7 +1,5 @@
 package cadastroUsuario;
 
-import java.time.LocalDate;
-
 public class Funcionario extends Pessoa {
 
 	private double salario;
@@ -10,9 +8,9 @@ public class Funcionario extends Pessoa {
 	private int tempoDeEmpresa;
 	
 	public Funcionario(int id, String nome, String sobrenomesDoMeio, String ultimoSobrenome, String rg,
-			LocalDate dataDeNascimento, String endereco, String celular, String email,
-			double salario, String cpf, String cargoAtual, int tempoDeEmpresa) {
-		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, dataDeNascimento, endereco, celular, email);
+			int anoDeNascimento, String endereco, String celular, String email,
+			double salario, String cpf, String cargoAtual, int tempoDeEmpresa,int idade) {
+		super(id, nome, sobrenomesDoMeio, ultimoSobrenome, rg, anoDeNascimento, endereco, celular, email,idade);
 		this.salario = salario;
 		this.cpf = cpf;
 		this.cargoAtual = cargoAtual;
