@@ -10,5 +10,6 @@ Desta forma, foi desenvolvido um projeto simulando um sistema de uma ONG para en
 [Generation Brasil - Java Fullstack Jr. - Turma 52] <br>
 [Equipe: Dimitri Marinho, Fabyola, Lairton da Silva, Paulo Victor e Thayna Saraiva]
 
+Projeto original construido em: https://github.com/dimitrimarinho/Trabalho1-Generation
 
 Digite START para iniciar o programa:
